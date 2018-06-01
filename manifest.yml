@@ -1,0 +1,4 @@
+applications:
+- name: nr-demo
+  memory: 256MB
+  instances: 1

@@ -2,11 +2,19 @@
     "name": "node-red-demo",
     "description": "A Node-RED Project",
     "version": "0.0.1",
-    "dependencies": {},
+    "dependencies": {
+        "node-red": "0.18.*"
+    },
     "node-red": {
         "settings": {
             "flowFile": "flow.json",
             "credentialsFile": "flow_cred.json"
         }
+    },
+    "scripts": {
+        "start": "node --max-old-space-size=160 ./node_modules/node-red/red.js --userDir . --settings ./settings.js flow.json"
+    },
+    "engines": {
+        "node": "8.x"
     }
 }

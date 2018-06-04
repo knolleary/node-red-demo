@@ -2,3 +2,9 @@ applications:
 - name: nr-demo-3
   memory: 256MB
   instances: 1
+  services:
+  - nr-demo-3-cloudant
+declared-services:
+  nr-demo-3-cloudant:
+    label: cloudantNoSQLDB
+    plan:  Lite

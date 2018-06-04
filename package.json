@@ -3,7 +3,8 @@
     "description": "A Node-RED Project",
     "version": "0.0.1",
     "dependencies": {
-        "node-red": "0.18.*"
+        "node-red": "0.18.*",
+        "node-red-node-cf-cloudant": "0.2.17"
     },
     "node-red": {
         "settings": {
